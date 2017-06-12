@@ -1,0 +1,16 @@
+{
+  "name": "testsocketio",
+  "version": "1.0.0",
+  "description": "Testing socket.io and learning. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon app.js"
+  },
+  "author": "abhinav_rai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^2.0.2"
+  }
+}

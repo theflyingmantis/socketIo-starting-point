@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Hello world</title></head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <body>Hello world
+    <input type="text" name="query" id="query" value="10">
+    <div id="dbData"></div>
+    <script>
+    var socket = io();
+    socket.emit('clientData',document.getElementById('query').value);
+    $("#query").on("change keyup paste", function(){
+      dosomething();
+    });
+    function dosomething(){
+      socket.emit('clientData',document.getElementById('query').value);
+      console.log(document.getElementById('query').value);
+    }
+    socket.on('dbData',function(data){
+      document.getElementById('dbData').innerHTML=data;
+    });
+  </script>
+
+  </body>
+</html>
