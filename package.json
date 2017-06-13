@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
+    "influx": "^5.0.7",
+    "request": "^2.81.0",
     "socket.io": "^2.0.2"
   }
 }
