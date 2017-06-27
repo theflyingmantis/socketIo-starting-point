@@ -10,7 +10,9 @@
   "author": "abhinav_rai",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.15.3",
+    "hapi": "^16.4.3",
     "influx": "^5.0.7",
     "request": "^2.81.0",
     "socket.io": "^2.0.2"
